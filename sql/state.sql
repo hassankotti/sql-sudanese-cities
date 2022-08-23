@@ -2,12 +2,12 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-# Dump of table regions
+# Dump of table States
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `regions`;
+DROP TABLE IF EXISTS `States`;
 
-CREATE TABLE `regions` (
+CREATE TABLE `States` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `code` varchar(10) NOT NULL,
@@ -15,26 +15,32 @@ CREATE TABLE `regions` (
   KEY `country_name` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=14;
 
-LOCK TABLES `regions` WRITE;
-/*!40000 ALTER TABLE `regions` DISABLE KEYS */;
+LOCK TABLES `States` WRITE;
+/*!40000 ALTER TABLE `States` DISABLE KEYS */;
 
-INSERT INTO `regions` (`id`, `name`, `code`)
+INSERT INTO `States` (`id`, `name`, `code`)
 VALUES
-	(1,'Makkah','14'),
-	(2,'Ar Riyad','10'),
-	(3,'Ha\'il','13'),
-	(4,'Al Hudud ash Shamaliyah','15'),
-	(5,'Jizan','17'),
-	(6,'Ash Sharqiyah','06'),
-	(7,'Al Madinah','05'),
-	(8,'Al Qasim','08'),
-	(9,'Al Bahah','02'),
-	(10,'Tabuk','19'),
-	(11,'Al Jawf','20'),
-	(12,'\'Asir','00'),
-	(13,'Najran','01');
+	(1,'Sennar','00'),
+	(2,'Khartoum','01'),
+	(3,'River Nile','02'),
+	(4,'Red Sea','03'),
+	(5,'Northern','04'),
+	(6,'North Darfur','05'),
+	(7,'Kassala','06'),
+	(8,'Al Qdarif','07'),
+	(9,'Blue Nile','08'),
+	(10,'White Nile','09'),
+	(11,'North Kurdofan','10'),
+	(12,'South Kurdofan','11'),
+	(13,'West Darfur','12'),
+	(14,'East Darfur','13'),
+	(15,'South Darfur','14'),
+	(16,'Central Darfur','15'),
+	(17,'West Kurdofan','16'),
+	(18,'Al Jazeera','17');
 
-/*!40000 ALTER TABLE `regions` ENABLE KEYS */;
+
+/*!40000 ALTER TABLE `States` ENABLE KEYS */;
 UNLOCK TABLES;
 
 

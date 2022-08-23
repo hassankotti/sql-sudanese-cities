@@ -16,18 +16,18 @@ DROP TABLE IF EXISTS `cities`;
 
 CREATE TABLE `cities` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `region_id` int(11) unsigned NOT NULL,
+  `state_id` int(11) unsigned NOT NULL,
   `latitude` decimal(10,8) NOT NULL,
   `longitude` decimal(11,8) NOT NULL,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `country_region_name` (`region_id`,`name`)
+  KEY `country_state_name` (`state_id`,`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1  AUTO_INCREMENT=4640;
 
 LOCK TABLES `cities` WRITE;
 /*!40000 ALTER TABLE `cities` DISABLE KEYS */;
 
-INSERT INTO `cities` (`id`, `region_id`, `latitude`, `longitude`, `name`)
+INSERT INTO `cities` (`id`, `state_id`, `latitude`, `longitude`, `name`)
 VALUES
 	(1,1,19.60861110,41.97166670,'Aalia'),
 	(2,2,27.02722220,44.06944440,'Aba ad Dud'),
