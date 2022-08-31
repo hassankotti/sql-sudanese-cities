@@ -1,5 +1,5 @@
 # Sudan states and cities
-![Sudan](https://raw.githubusercontent.com/hassankotti/sql-sudanese-cities/bed3cf9e9d0a3c8cf480075763e3dd816a324895/assets/sudan.svg)
+![Sudan](https://user-images.githubusercontent.com/24292773/187621598-ab7acf93-7ab9-43c7-8501-678f802e6521.png)
 
 ## What is this ?
 This is a SQL dump of the whole list of Sudanese cities with the State they belong to, in a sister table.
